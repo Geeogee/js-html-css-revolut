@@ -1,18 +1,15 @@
 
 function showDropdowns() {
     var hasDropdown = $("li.has-dropdown, li.has-big-dropdown");
-    
+    var dropdown = $(this).find(".dropdown, .big-dropdown"); 
+    var isActive = dropdown.hasClass("active");
+
     hideDropdowns(hasDropdown);
 
-    if ($(this).find(".dropdown, .big-dropdown").data("open")) {
-        $(this).find(".dropdown, .big-dropdown").removeClass("active");
-        $(this).find(".dropdown, .big-dropdown").data("open", false)
-
-    } else {
-        $(this).find(".dropdown, .big-dropdown").addClass("active");
-        $(this).find(".dropdown, .big-dropdown").data("open", true)
-    }
-    
+    if (!isActive) {
+        dropdown.addClass("active");
+    } 
+ 
 }
 
 function hideDropdowns(hasDropdown) {
