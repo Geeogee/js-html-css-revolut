@@ -4,8 +4,10 @@ function showDropdowns() {
     
     hideDropdowns(hasDropdown);
 
-    if ($(this).find(".dropdown, .big-dropdown").data()) {
+    if ($(this).find(".dropdown, .big-dropdown").data("open")) {
         $(this).find(".dropdown, .big-dropdown").removeClass("active");
+        $(this).find(".dropdown, .big-dropdown").data("open", false)
+
     } else {
         $(this).find(".dropdown, .big-dropdown").addClass("active");
         $(this).find(".dropdown, .big-dropdown").data("open", true)
