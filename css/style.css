@@ -66,13 +66,18 @@ li.has-dropdown {
     position: absolute;
 }
 
+.active {
+    display: block;
+}
+
+/* 
 .has-big-dropdown:hover .big-dropdown {
     display: flex;
 }
 
 .has-dropdown:hover .dropdown {
     display: block;
-}
+} */
 
 
 
