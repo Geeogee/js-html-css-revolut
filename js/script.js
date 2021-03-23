@@ -4,7 +4,13 @@ function showDropdowns() {
     
     hideDropdowns(hasDropdown);
 
-    $(this).find(".dropdown, .big-dropdown").addClass("active");
+    if ($(this).find(".dropdown, .big-dropdown").data()) {
+        $(this).find(".dropdown, .big-dropdown").removeClass("active");
+    } else {
+        $(this).find(".dropdown, .big-dropdown").addClass("active");
+        $(this).find(".dropdown, .big-dropdown").data("open", true)
+    }
+    
 }
 
 function hideDropdowns(hasDropdown) {
