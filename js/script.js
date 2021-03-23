@@ -5,13 +5,13 @@ function showDropdowns() {
     var dropdown = $(this).find(".dropdown, .big-dropdown"); 
     var isActive = dropdown.hasClass("active");
 
-    // $(window).off("click");
     hideDropdowns(hasDropdown);
     dropdown.addClass("active");
     if (!isActive) {
 
        dropdown.addClass("active");
-    } 
+    }
+
 }
 
 function hideDropdowns(hasDropdown) {
