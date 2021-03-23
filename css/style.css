@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 
 header {
     width: 100%;
@@ -28,16 +32,26 @@ header {
     position: relative;
 }
 
+#logo-image {
+    width: 20px;
+}
+
 #nav-menu-left {
     flex-grow: 1;
 }
 
 .nav-links {
-    /* debug*/
-    background-color: red;
-
     display: flex;
     align-items: center;  
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #8b959e;
+}
+
+.nav-links a:hover {
+    color: #000;
 }
 
 .nav-links, .nav-links ul {
@@ -52,32 +66,50 @@ li.has-dropdown {
     position: relative;
 }
 
-.big-dropdown {
-    display: none;
-    background-color: blue;
+.big-dropdown, .dropdown {
+    top: calc(100% + 30px);
+    box-shadow: 0 2px 4px #d9d9d9;
     position: absolute;
-    top: 100%;
-    right: 0;
+    display: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
 }
 
-.dropdown {
-    background-color: green;
-    display: none;
-    position: absolute;
+.big-dropdown {
+    right: 0;
 }
 
 .active {
     display: block;
 }
 
-/* 
-.has-big-dropdown:hover .big-dropdown {
+.big-dropdown.active {
     display: flex;
 }
 
-.has-dropdown:hover .dropdown {
-    display: block;
-} */
+.dropdown-title {
+    color: #ced5db;
+}
 
+.big-dropdown li, .dropdown li {
+    padding:  15px 10px;
+    white-space: nowrap;
+}
 
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
 
+#signup {
+    background-color: #f0f0f0;
+    color: #000;   
+}
+
+#getapp {
+    background-color: #191c1f;
+    color: #FFF;
+}

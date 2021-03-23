@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolut Navbar</title>
-
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- jQuery-->
@@ -23,7 +27,9 @@
 
                 <ul class="nav-links">
                     <li>
-                        <a href="#">Logo</a>
+                        <a href="#">
+                            <img id="logo-image" src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/revolut-logo.png">
+                        </a>
                     </li>
                     <li>
                         <a href="#">Personal</a>
@@ -45,49 +51,49 @@
                         <ul class="big-dropdown">
                             
                             <li>
-                                
-                                <h3>Account</h3>
+                                <i class="fas fa-university dropdown-title"></i>
+                                <span class="dropdown-title">Account</span>
                                 <ul>
-                                    <li>Budget & Analytics</li>
-                                    <li>Cards</li>
-                                    <li>Junior accounts</li>
-                                    <li>Pockets</li>
+                                    <li><a href="#">Budget & Analytics</a></li>
+                                    <li><a href="#">Cards</a></li>
+                                    <li><a href="#">Junior accounts</a></li>
+                                    <li><a href="#">Pockets</a></li>
                                 </ul>
 
                             </li>
 
                             <li>
-                            
-                                <h3>Wealth</h3>
+                                <i class="fas fa-chart-line dropdown-title"></i>
+                                <span class="dropdown-title dropdown-title">Wealth</span>
                                 <ul>
-                                    <li>Crypto</li>
-                                    <li>Commodities</li>
-                                    <li>Vaults</li>
-                                    <li>Saving Vaults</li>
+                                    <li><a href="#">Crypto</a></li>
+                                    <li><a href="#">Commodities</a></li>
+                                    <li><a href="#">Vaults</a></li>
+                                    <li><a href="#">Saving Vaults</a></li>
                                 </ul>  
                             
                             </li>
 
                             <li>
-
-                                <h3>Payments</h3>
+                                <i class="fas fa-exchange-alt dropdown-title"></i>
+                                <span class="dropdown-title dropdown-title">Payments</span>
                                 <ul>
-                                    <li>Money tranfers</li>
-                                    <li>Group bills</li>
-                                    <li>Subscriptions</li>
+                                    <li><a href="#">Money tranfers</a></li>
+                                    <li><a href="#">Group bills</a></li>
+                                    <li><a href="#">Subscriptions</a></li>
                                 </ul>
                             
                             </li>
 
                             <li>
-
-                                <h3>Extras</h3>
+                                <i class="fas fa-star dropdown-title"></i>
+                                <span class="dropdown-title dropdown-title">Extras</span>
                                 <ul>
-                                    <li>Donations</li>
-                                    <li>Overseas insurance</li>
-                                    <li>Device insurance</li>
-                                    <li>Safety</li>
-                                    <li>Rewards</li>
+                                    <li><a href="#">Donations</a></li>
+                                    <li><a href="#">Overseas insurance</a></li>
+                                    <li><a href="#">Device insurance</a></li>
+                                    <li><a href="#">Safety</a></li>
+                                    <li><a href="#">Rewards</a></li>
                                 </ul>
                             
                             </li>
@@ -200,11 +206,11 @@
 
                 <ul class="nav-links">
                     <li>
-                        <a href="#">Log in</a>
+                        <a id="signup" class="button-link signup" href="#">Sign up</a>
                     </li>
 
                     <li>
-                        <a href="#">Sign up</a>
+                        <a id="getapp" class="button-link" href="#">Get the App</a>
                     </li>
                 </ul>
 
